@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  
+  .person, .computer {
+    width: 25%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 32px;
+  text-align: center;
+}

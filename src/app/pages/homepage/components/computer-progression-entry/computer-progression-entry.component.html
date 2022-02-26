@@ -1,0 +1,12 @@
+<div class="container" [style.gap]="(separation * 50) + '%'">
+  <div class="person">
+    <img src="assets/img/person.svg" alt="Person">
+  </div>
+  <div class="computer">
+    <img [src]="computerImage" alt="Computer">
+  </div>
+</div>
+
+<div class="description">
+  <ng-content></ng-content>
+</div>

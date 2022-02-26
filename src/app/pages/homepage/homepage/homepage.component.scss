@@ -1,0 +1,23 @@
+app-computer-progression-entry {
+  margin-top: 256px;
+  display: block;
+}
+
+.prompt-container {
+  margin-top: 64px;
+
+  .prompt {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .cta {
+    display: block;
+
+    margin-top: 16px;
+
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(128, 0, 255);
+  }
+}

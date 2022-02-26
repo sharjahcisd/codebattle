@@ -1,0 +1,51 @@
+<h2>
+  Where can they be?
+</h2>
+
+<div class="container">
+  <div class="absolutes-container">
+    <div class="image-container">
+      <img src="assets/img/anatomical-person.svg" alt="Person">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="links-container">
+      <a class="link" [class.selected]="selectedItem === 1" (click)="select(1)">On our bodies</a>
+      <a class="link" [class.selected]="selectedItem === 2" (click)="select(2)">In our clothes</a>
+      <a class="link" [class.selected]="selectedItem === 3" (click)="select(3)">Inside our bodies</a>
+    </div>
+  </div>
+
+  <div class="description-container">
+    <div class="description" *ngIf="selectedItem === 1">
+      Common smart devices that are worn on one's body include wireless earphones and headphones and smart watches.
+      These devices are small, and if they had to do a lot of heavy computing and other intensive tasks like cellular radio communication,
+      they would quickly run out of charge. That's why they usually pair with a cellphone, delegating these tasks to it.
+      This gives the convenience of having a device on one's body, and the power of a cellphone.
+      Sometimes, these devices are used without the wearer's consent. For example, people who're sentenced to home arrest, and those
+      who're made to quarantine as a result of a pandemic, are sometimes made to wear tracker wristbands. It is important to take
+      into consideration the ethical considerations of having an intrusive device nonconsensually installed on someone's body.
+      A convenient aspect of having a device on one's body is that they can measure some of a person's physical characteristics.
+      Smart watches and especially fitness bands use this to their advantage, tracking a person's heart rate, blood pressure,
+      athletic and sleep activity and other relevant characteristics. Smart watches have even been known to save people's lives,
+      automatically calling emergency services if they detect dangerous conditions.
+    </div>
+    <div class="description" *ngIf="selectedItem === 2">
+      Some smart devices are installed on our clothes, and some manufacturers are even making clothes that are themselves the smart device.
+      These devices, like those installed on the body, also have access to a person's physical characteristics, but this time they
+      are better suited for tracking physical activity like running. They can also protect the clothes themselves, like anti-theft
+      RF based devices.
+    </div>
+    <div class="description" *ngIf="selectedItem === 3">
+      Another class of smart devices are installed inside our bodies! These are usually not powered by batteries, but rather
+      obtain their power from nearby radiation by devices that are trying to interact with these devices. They usually work using
+      RFID communication, and most of the time are used to store data about a person. This extends to pets as well, with many
+      domestic pets being microchipped for identification. Some companies are even trying to get a digital Covid-pass installed
+      inside people's bodies, so that they can access venues that restrict access to vaccinated individuals only. Like with other
+      wearable devices, there are sensitive ethical concerns associated with these devices, and especially when someone is coerced
+      to install them inside their bodies without their full and informed consent.
+    </div>
+  </div>
+</div>
